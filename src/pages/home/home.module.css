@@ -1,0 +1,140 @@
+
+.home{
+   max-width: 1600px;
+   margin: 0 auto;
+   padding: 1.5rem 2.5rem;
+   height: 200rem;
+   position: relative;
+}
+.home::before{
+   content: '';
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 35rem;
+
+   background-image: url(../../assets/bg-dots.svg);
+   background-position: center;
+   background-size: cover;
+
+}
+
+.home_title{
+   max-width: 900px;
+   margin: 0 auto;
+   margin-top: 7rem;
+   position: relative;
+   z-index: 2;
+}
+.title{
+   text-align: center;
+   font-size: 5rem;
+   font-weight: 600;
+   color: var(--semi-dark);
+   line-height: 5rem;
+   text-shadow: -6px 6px 0 var(--shadow);
+}
+.label{
+   font-size: 16px;
+   color: var(--gray);
+   max-width: 600px;
+   text-align: center;
+   margin: 2rem auto;
+   line-height: 22px;
+   letter-spacing: .2px;
+}
+.label > span {
+   display: inline-block;
+   transform-origin: 70% 70%; /* Adjust origin for more natural pivot */
+   animation: wave 1.5s ease-in-out infinite;
+}
+ 
+@keyframes wave {
+   0% { transform: rotate(0deg); }
+   15% { transform: rotate(14deg); }
+   30% { transform: rotate(-8deg); }
+   45% { transform: rotate(14deg); }
+   60% { transform: rotate(-4deg); }
+   75% { transform: rotate(10deg); }
+   100% { transform: rotate(0deg); }
+}
+
+
+.btns{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   margin-top: 3.5rem;
+}
+.btn{
+   padding: 10px 1.4rem;
+   height: 2.7rem;
+   border: none;
+   border-radius: 50rem;
+   cursor: pointer;
+   box-shadow: -3px 3px 0 var(--shadow);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   
+}
+.btn > i{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.resume_btn{
+   background-color: var(--dark);
+   color: var(--white);
+   gap: .65rem;
+   width: 7.7rem;
+}
+.res_sp{
+   opacity: 1;
+   max-width: 100px;
+   overflow: hidden;
+   white-space: nowrap;
+   transition: opacity 500ms ease, max-width 500ms ease;
+}
+.resume_btn:hover .res_sp{
+   opacity: 0;
+   max-width: 0;
+}  
+.resume_btn:hover i {
+   transform: translateX(6px);
+   transition: transform 300ms ease;
+}
+.resume_btn:active, .project_btn:active{
+   transform: translateX(-1px) translateY(1px);
+   box-shadow: none;
+}
+
+.project_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  border: 1px solid var(--semi-dark);
+}
+.project_btn > i{
+   margin-top: 1px;
+}
+.project_btn i,
+.project_btn span {
+  transition: transform 300ms ease;
+}
+
+.project_btn:hover i {
+  transform: translateX(90px); 
+}
+
+.project_btn:hover span {
+  transform: translateX(-30px);
+}
+
+

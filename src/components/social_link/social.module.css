@@ -1,0 +1,43 @@
+
+.social_box{
+   padding: 0 1.2rem;
+   height: 1.7rem;
+   border: 1.5px solid var(--gray);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 20rem;
+   border-style: dashed;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+
+   
+}
+.social_box > p{
+   font-size: 12px;
+   text-align: center;
+   font-weight: 500;
+   color: var(--semi-dark);
+}
+
+.social_btn{
+   padding: 0 1.2rem;
+   height: 1.8rem;
+   background: var(--linear-charm);
+   border: none;
+   position: absolute;
+   border-radius: 20rem;
+   font-size: 12px;
+   cursor: pointer;
+   color: var(--semi-dark);
+   font-weight: 500;
+   transform: translateY(2rem);
+   transition: all 170ms;
+   transition-delay: 100ms;
+}
+
+.social_box:hover .social_btn{
+   transform: translateY(0);
+   transition: all 230ms;
+}
