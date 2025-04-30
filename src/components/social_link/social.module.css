@@ -41,3 +41,9 @@
    transform: translateY(0);
    transition: all 230ms;
 }
+
+@media screen and (max-width: 900px){
+   .social_box > p{
+      color: var(--gray);
+   }
+}
